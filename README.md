@@ -1,1 +1,5 @@
-# acorn
+Acorn.git
+
+Acorn project used as part of Acorn AppDev initiative...
+
+Under construction...
