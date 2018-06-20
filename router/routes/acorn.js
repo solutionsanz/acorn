@@ -8,6 +8,7 @@ var https = require('https');
 var formidable = require('formidable');
 var fs = require('fs');
 
+
 //require the csvtojson converter class 
 var Converter = require("csvtojson").Converter;
 var util = require('util');
@@ -134,6 +135,8 @@ module.exports = function (app) {
     /* POST records */
     app.post('/records', function (req, res) {
 
+        console.log("***Request is [" + util.inspect({"request": req}) + "]");
+
         var appKey = req.get("x-api-key");
         var collectionName = req.body.CollectionName;
 
@@ -141,7 +144,7 @@ module.exports = function (app) {
 
         if (appKey == null || appKey == undefined || collectionName == null || collectionName == undefined) {
 
-            log("GET", "/records", "Invalid API Key or Collection name. Verify and try again.");
+            log("POST", "/records", "Invalid API Key or Collection name. Verify and try again.");
             res.status(400).end("Invalid API Key or Collection Name. Verify and try again."); //Bad request...
             return;
         }
@@ -347,8 +350,7 @@ module.exports = function (app) {
      * Receive CSV File to be converted into JSON and stored as a Collection in DB
      * 
      */
-    app.post('/uploadfile', function (req, res) {
-
+    app.post('/ws/uploadfile', function (req, res) {
 
         console.log("*** Reading uploaded CSV file...");
         var form = new formidable.IncomingForm();

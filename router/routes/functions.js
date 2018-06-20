@@ -51,54 +51,6 @@ exports.sendNotification = function (jk, name, mobile, method, callback) {
 };
 
 
-exports.uploadFile = function (req, res, callback) {
-
-	try {
-		console.log("Sending joke [" + jk.joke + "] to [" + mobile + "] by [" + method + "]");
-
-		var host = config.API_GW_SERVER;
-		var port = config.API_GW_PORT;
-
-		switch (method.toUpperCase()) {
-			case "SMS":
-				method = "sms";
-				break;
-			case "VOICE":
-				method = "voicecall";
-				break;
-			default:
-				method = "sms";
-		}
-
-		var fullText = (name == null || name == "" || name == undefined) ? 'A friend ' : name + ', a friend ';
-		fullText += 'thinks you will like this joke: '
-		fullText += jk.joke
-		fullText += ' - For more information go to http://apismadeeasy.cloud.';
-
-		var path = "/api/notifications/" + method;
-		var method = "POST";
-		var body = {
-			'to': mobile,
-			'msg': fullText
-		};
-
-		body = JSON.stringify(body);
-
-		var secured = true; // Default to secured HTTPS endpoint.
-
-		console.log("Calling (host, port, path, method, body) [" +
-			host + ", " + port + ", " + path + ", " + method +
-			", " + body + "]");
-
-		// Invoke API and execute callback:
-		sendRequest(host, port, path, method, body, secured, callback);
-	} catch (error) {
-
-		console.log("An unexpected error just occured [" + error + "] - Please verify input and try again");
-	}
-};
-
-
 function sendRequest(host, port, path, method, body, secured, callback) {
 
 	try {
