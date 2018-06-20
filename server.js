@@ -64,7 +64,7 @@ app.use(function (req, res, next) {
 });
 
 //Include the html assets
-app.get('/anki-jokes-ext-apis/v1', function (req, res) {
+app.get('/acorn-apis/v1', function (req, res) {
 
     // Issuing dynamic updates:
     var isAPIGWSecured = false;

@@ -21,8 +21,10 @@ function getAJoke() {
     document.getElementById("newJoke").innerHTML = "Loading...";
 
     // var server = "https://icanhazdadjoke.com";
-    var server = "https://apip.oracleau.cloud"
-    var uri = "/api/jokes/jokes"
+    //var server = "https://apip.oracleau.cloud";
+    //var uri = "/api/jokes/jokes";
+    var server = "https://apis4jokes-gse00014296.uscom-east-1.oraclecloud.com";
+    var uri = "/jokes";
 
     var uri = server + uri; // Get a random joke
 
@@ -63,10 +65,12 @@ function translateJoke() {
     document.getElementById("theTranslatedJoke").innerHTML = "Loading...";
 
     // var server = "https://icanhazdadjoke.com";
-    var server = "https://apip.oracleau.cloud"
-    var apipUri = "/api/jokes/jokes/";
+    //var server = "https://apip.oracleau.cloud";
+    //var apipUri = "/api/jokes/jokes/";
+    var server = "https://apis4jokes-gse00014296.uscom-east-1.oraclecloud.com";
+    var apipUri = "/jokes/";
 
-    //var server = "http://10.0.0.55:3000"
+    //var server = "http://10.0.0.55:3000";
     //var apipUri = "/jokes/";
 
     var jokeId = document.getElementById("signUpForm").theOriginalJokeId.value;
@@ -122,11 +126,13 @@ function sendJoke() {
     document.getElementById("sendJokeLabel").innerHTML = "Sending...";
 
     // var server = "https://icanhazdadjoke.com";
-    var server = "https://apip.oracleau.cloud"
-    var apipUri = "/api/jokes/jokes/";
+    //var server = "https://apip.oracleau.cloud";
+    //var apipUri = "/api/jokes/jokes/";
+    var server = "https://apis4jokes-gse00014296.uscom-east-1.oraclecloud.com";
+    var apipUri = "/jokes/";
 
-    // var server = "http://10.0.0.55:3000"
-    // var apipUri = "/jokes/";
+//     var server = "http://10.0.0.55:3000";
+//     var apipUri = "/jokes/";
 
     var jokeId = document.getElementById("signUpForm").theOriginalJokeId.value;
     var lang = document.getElementById("signUpForm").language.value;
