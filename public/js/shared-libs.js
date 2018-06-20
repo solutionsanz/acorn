@@ -79,7 +79,7 @@ function handleUpload() {
                 $.ajax({
                     type: "POST",
                     beforeSend: function (request) {
-                        request.setRequestHeader("x-api-key", "cri"); // @TODO: think how to pass authentication key
+                        request.setRequestHeader("x-api-key", "demo"); // @TODO: think how to pass authentication key
                     },
                     url: uri,
                     dataType: "json",
@@ -101,7 +101,7 @@ function handleUpload() {
         }
     });
 
-    document.getElementById("uploadFileLabel").innerHTML = "Done";
+    document.getElementById("uploadFileLabel").innerHTML = "";
 
 
 

@@ -133,9 +133,7 @@ module.exports = function (app) {
     });
 
     /* POST records */
-    app.post('/records', function (req, res) {
-
-        console.log("***Request is [" + util.inspect({"request": req}) + "]");
+    app.post('/records', function (req, res) {        
 
         var appKey = req.get("x-api-key");
         var collectionName = req.body.CollectionName;
