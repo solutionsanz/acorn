@@ -56,7 +56,7 @@ It uses Vagrant to provision a new Ubuntu 16.04 VM.
 
             docker login
 
-        Enter docker hub username, password and email.
+            Enter docker hub username, password and email.
 
 Deploy Acorn application in Kubernetes
 ------
