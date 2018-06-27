@@ -61,9 +61,9 @@ It uses Vagrant to provision a new Ubuntu 16.04 VM.
 Deploy Acorn application in Kubernetes
 ------
 
-   - Go to where you have installed and configured kubectl.
+   - Go to where you have installed and configured **kubectl**.
 
-        Note: See the following blog if you need assistance to provision Kubernetes [read this blog](https://redthunder.blog/2018/04/18/teaching-how-to-quickly-provision-a-dev-kubernetes-environment-locally-or-in-oracle-cloud/). 
+        Note: [Read this blog](https://redthunder.blog/2018/04/18/teaching-how-to-quickly-provision-a-dev-kubernetes-environment-locally-or-in-oracle-cloud/) if you need assistance to provision Kubernetes.
 
    - Download or Git clone this Github repo: 
 
@@ -73,16 +73,16 @@ Deploy Acorn application in Kubernetes
 
     - Change directory to deploy
 
-        cd deploy
+            cd deploy
 
     - Deploy Acorn Kubernetes application resources (deployment, service, ingress)
 
-        ./deploy.sh
+            ./deploy.sh
 
     - Open up Kubernetes Dashboard UI or equivalent (e.g. WeaveScope) and validate all Acorn respources were deployed successfully.
 
-    - Test your application, open a browser and go to: http://[LB|IP]/acorn/ws/ - Test your app. 
+    - Test your application, open a browser and go to: **http://[LB|IP]/acorn/ws/** - Test your app. 
     
-    - Upload some data via the CSV file uploader, then open up the included Swagger UI (http://[LB|IP]/acorn/) and play with the various APIs.
+    - Upload some data via the CSV file uploader, then open up the included Swagger UI **http://[LB|IP]/acorn/** and play with the various APIs.
     
         Authenticate as: **demo**
