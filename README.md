@@ -1,9 +1,9 @@
 Acorn project
 ------
 
-This repository contains Acorn project, that is a quick way to create REST APIs to interact with CSV data. 
+This repository contains Acorn project, that is a quick way to create REST APIs out of a CSV data file. 
 
-It uses Vagrant to provision a new Ubuntu 16.04 VM.
+Containerise Acorn Application
 ------
 
    - Ensure you have installed Vagrant on your laptop/PC. If you need help, [read this blog](https://redthunder.blog/2018/02/13/teaching-how-to-use-vagrant-to-simplify-building-local-dev-and-test-environments/). 
