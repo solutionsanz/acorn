@@ -50,7 +50,7 @@ It uses Vagrant to provision a new Ubuntu 16.04 VM.
     
     - Upload some data via the CSV file uploader, then open up the included Swagger UI (http://localhost:3000) and play with the various APIs.
     
-        Authenticate as: **demo**
+            Authenticate as: **demo**
 
     - Once you feel confortable with the Docker image, push it to Docker Hub. First, login to Docker Hub:
 
