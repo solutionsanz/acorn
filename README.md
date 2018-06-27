@@ -18,9 +18,9 @@ It uses Vagrant to provision a new Ubuntu 16.04 VM.
 
 	        vagrant up
 
-   - A new Ubuntu VM will be provisioned and a bootstrap script will install all required utilities (e.g. docker).
+    - A new Ubuntu VM will be provisioned and a bootstrap script will install all required utilities (e.g. docker).
     
-            You can now **vagrant ssh** into it.
+    - You can now **vagrant ssh** into it.
 
     - Go to your working directory (mounted from host OS).
 
