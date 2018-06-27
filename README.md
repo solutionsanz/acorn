@@ -79,7 +79,7 @@ Deploy Acorn application in Kubernetes
 
             ./deploy.sh
 
-    - Open up Kubernetes Dashboard UI or equivalent (e.g. WeaveScope) and validate all Acorn respources were deployed successfully.
+    - Open up Kubernetes Dashboard UI or equivalent (e.g. WeaveScope) and validate all Acorn resources were deployed successfully.
 
     - Test your application, open a browser and go to: **http://[LB|IP]/acorn/ws/** - Test your app. 
     
