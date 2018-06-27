@@ -61,7 +61,7 @@ It uses Vagrant to provision a new Ubuntu 16.04 VM.
 Deploy Acorn application in Kubernetes
 ------
 
-    - Go to where you have installed and configured kubectl.
+   - Go to where you have installed and configured kubectl.
 
         Note: See the following blog if you need assistance to provision Kubernetes [read this blog](https://redthunder.blog/2018/04/18/teaching-how-to-quickly-provision-a-dev-kubernetes-environment-locally-or-in-oracle-cloud/). 
 
