@@ -42,9 +42,9 @@ It uses Vagrant to provision a new Ubuntu 16.04 VM.
 
 	        docker run --env-file setEnv -p 3000:3000 -it [image_id] 
 
-                Note, if you are unsure about the actual **image_id**, you can use **docker images** to gather all images being generated.
-
-                Also note that by default port 3000 was configured in by vagrant as part of your VM setup.
+        Note, if you are unsure about the actual **image_id**, you can use **docker images** to gather all images being generated.
+        
+        Also note that by default port 3000 was configured in by vagrant as part of your VM setup.
 
     - In your host OS, open a browser and go to: http://localhost:3000/ws - Test your app. 
     
