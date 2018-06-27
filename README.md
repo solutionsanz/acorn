@@ -85,4 +85,6 @@ Deploy Acorn application in Kubernetes
     
     - Upload some data via the CSV file uploader, then open up the included Swagger UI **http://[LB|IP]/acorn/** and play with the various APIs.
     
-        Authenticate as: **demo**
+            Authenticate as: demo
+    
+If you need any assistance, feel free to [contact me](https://www.linkedin.com/in/citurria/).
